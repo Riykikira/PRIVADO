@@ -1,0 +1,26 @@
+/* Fundo do Menu: A cor exata da Apple é um cinza quase preto (#161617) */
+.navbar-apple {
+    background-color: rgba(22, 22, 23, 0.8); /* 0.8 deixa meio transparente */
+    backdrop-filter: blur(20px); /* O famoso efeito de vidro fosco da Apple */
+    height: 48px; /* A Apple usa menus bem finos */
+    transition: all 0.3s ease;
+}
+
+/* Os Links (Textos) */
+.navbar-apple .nav-link {
+    color: #d1d1d1 !important; /* Cinza claro */
+    font-size: 12px; /* Fonte pequena e elegante */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif; /* Fonte do sistema */
+    margin: 0 8px; /* Espaçamento entre as palavras */
+    transition: color 0.3s; /* Suavidade ao passar o mouse */
+}
+
+/* Quando passa o mouse em cima */
+.navbar-apple .nav-link:hover {
+    color: #ffffff !important; /* Fica branco puro */
+}
+
+/* Ajuste do botão hamburguer no celular */
+.navbar-toggler:focus {
+    box-shadow: none; /* Tira aquela borda azul feia do clique */
+}

@@ -1,12 +1,18 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet } from "@angular/router";
+import { Cabecalho } from "../home/cabecalho/cabecalho";
+import { Component } from "@angular/core";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,
+  imports: [RouterOutlet, Cabecalho], // Mantenha seus imports aqui
+  template: `
+    <app-cabecalho></app-cabecalho>
+
+    <router-outlet></router-outlet> 
+  `,
+  styleUrls: [] // ou styles dependendo da sua versão
 })
 export class App {
-  protected readonly title = signal('estudos-angula');
+  // ...
 }
